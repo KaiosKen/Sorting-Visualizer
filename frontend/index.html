@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+
+    <!-- Codemirror Core CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <!-- Codemirror Theme CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/theme/monokai.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/theme/solarized.min.css">
+    <!-- Add themes for other languages as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.11/mode/clike/clike.min.js"></script>
+
+
+
+    <!-- Add modes for other languages as needed -->
+</head>
+
+<body>
+    <h1>Sorting Algorithm Visualizer</h1>
+
+    <label for="language-select">Choose Language:</label>
+    <select id="language-select">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+        <!-- Add more languages as needed -->
+    </select>
+    <label for="theme-select">Select Theme:</label>
+    <select id="theme-select">
+        <option value="default">Default</option>
+        <option value="dracula">Dracula</option>
+        <option value="monokai">Monokai</option>
+        <option value="solarized dark">Solarized Dark</option>
+        <option value="solarized light">Solarized Light</option>
+    </select>
+
+
+    <textarea id="code">/* Write your code here */</textarea>
+
+    <button id="run-code">Run Code</button>
+
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

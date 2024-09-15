@@ -1,0 +1,25 @@
+version: '3'
+services:
+  python:
+    image: python:3.8
+    volumes:
+      - ./code:/code
+    command: python /code/script.py
+  
+  java:
+    image: openjdk:11
+    volumes:
+      - ./code:/code
+    command: bash -c "javac /code/Main.java && java -cp /code Main"
+
+  cpp:
+    image: gcc:latest
+    volumes:
+      - ./code:/code
+    command: bash -c "g++ /code/main.cpp -o /code/output && /code/output"
+
+  rust:
+    image: rust:latest
+    volumes:
+      - ./code:/code
+    command: bash -c "rustc /code/main.rs -o /code/output && /code/output"
